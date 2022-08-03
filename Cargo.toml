@@ -1,0 +1,14 @@
+[package]
+name = "hello-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serenity = { version = "0.11.5", default-features = false, features = ["client", "gateway", "rustls_backend", "model"] }
+tokio = { version = "1.20.1", features = ["macros", "rt-multi-thread"] }
+rand = "0.8.5"
+markov = "1.1.0"
+lazy_static = "1.4.0"
+mut_static = "5.0.0"
